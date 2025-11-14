@@ -338,24 +338,36 @@ hr {
     display: none;
     position: absolute;
     left: 4rem;
+    background: rgba(0, 102, 204, 0.1);
+    padding: 0 0.75rem;
+    border-radius: 8px;
   }
 
   .feat-text {
     display: none;
     position: absolute;
     left: 4rem;
+    background: rgba(0, 102, 204, 0.1);
+    padding: 0 0.75rem;
+    border-radius: 8px;
   }
 
   .dash-text {
     display: none;
     position: absolute;
     left: 4rem;
+    background: rgba(0, 102, 204, 0.1);
+    padding: 0 0.75rem;
+    border-radius: 8px;
   }
 
   .contacts-text {
     display: none;
     position: absolute;
     left: 4rem;
+    background: rgba(0, 102, 204, 0.1);
+    padding: 0 0.75rem;
+    border-radius: 8px;
   }
 
   .settings-text {
