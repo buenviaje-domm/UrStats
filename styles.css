@@ -1095,6 +1095,216 @@ footer {
   font-weight: 700;
 }
 
+/* Add Course */
+
+.add-body {
+  color: #333;
+  font-family: var(--mainFont);
+  background: url(assets/MAIN\ PAGE/bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-add-sec {
+  margin: 4.5rem 5.5rem 0 12rem;
+  font-family: var(--mainFont);
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+}
+
+.add-container {
+  position: relative;
+  width: 100%;
+  padding: 2rem;
+  border-radius: 44px;
+  background: #eaf2ff;
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+}
+
+.add-sec-box {
+  display: flex;
+  gap: 1rem;
+
+}
+
+
+.add-container::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 1;
+  right: 0;
+  height: 40px;
+  width: 99%;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  background: linear-gradient(to bottom,
+      rgba(255, 255, 255, 0.95),
+      rgba(255, 255, 255, 0));
+  z-index: 2;
+}
+
+.text-wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: .5rem;
+  background: #FFFFFF;
+  padding: .5rem 1rem;
+  border-radius: 25px;
+  align-items: center;
+  border: #64748B 2px solid;
+}
+
+.text-wrapper textarea {
+  width: 100%;
+  resize: none;
+  background: none;
+  border: none;
+  font-size: 15px;
+  height: fit-content;
+  align-self: center;
+
+}
+
+.text-wrapper textarea:focus {
+  outline: none;
+}
+
+.drop-downs {
+  display: flex;
+}
+
+.drop-downs h4 {
+  margin-right: 1rem;
+}
+
+.drop-downs p {
+  padding: .2rem .5rem;
+  background-color: #FFFFFF;
+  border: #444 solid 2px;
+  border-radius: 25px;
+}
+
+.addcourseTop {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: .4rem;
+}
+
+.addcourseTop h1 {
+  font-size: 50px;
+}
+
+.book-icon {
+  width: fit-content;
+  height: 150px;
+}
+
+.addc-line {
+  border-top: #000000 2px solid;
+}
+
+.add-courses-box {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.first-books {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  padding: 0 2rem 2rem 2rem;
+  
+}
+
+
+.first-books img {
+  width: 100%;
+  border-radius: 12px;
+  display: block;
+  box-shadow: 0px 7px 15px -10px rgba(0, 0, 0, 1);
+  transition: 0.1s ease-in-out;
+  cursor: pointer;
+}
+
+.first-books img:hover {
+  filter: brightness(.5);
+}
+
+.img-option {
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.689);
+  width: fit-content;
+  display: none;
+  gap: .5rem;
+  border-radius: 7px;
+  position: absolute;
+  bottom: 1rem;
+  left: 1.5rem;
+  
+}
+.book1 {
+  position: relative;
+}
+.book1:hover .img-option  {
+display: flex;
+
+}
+
+
+
+.sem-title {
+  margin-left: 25px;
+  color: var(--text-muted);
+  font-weight: 700;
+  font-size: 25px;
+}
+
+.college-title {
+
+  color: var(--text);
+  font-weight: 400;
+  font-size: 30px;
+}
+
+
+
+
+.cs-first-sem {
+  position: relative;
+  width: 100%;
+  padding: 2rem;
+  border-radius: 44px;
+  background: #eaf2ff;
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+}
+
+.cs-first-sem::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 1;
+  right: 0;
+  height: 40px;
+  width: 99%;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  background: linear-gradient(to bottom,
+      rgba(255, 255, 255, 0.95),
+      rgba(255, 255, 255, 0));
+  z-index: 2;
+}
 
 /* mediaqueries */
 
@@ -1211,6 +1421,11 @@ footer {
 
   .notes-box p {
     font-size: 15px;
+  }
+
+  .drop-downs p {
+
+    font-size: 12px;
   }
 }
 
@@ -1366,6 +1581,10 @@ footer {
     margin: 2rem 1rem 0 1rem;
   }
 
+  .main-add-sec {
+    margin: 2rem 1rem 0 1rem;
+  }
+
   .user-details h1 {
     font-size: 25px;
   }
@@ -1379,7 +1598,7 @@ footer {
   }
 
   footer {
-    padding-bottom:77px;
+    padding-bottom: 77px;
   }
 
   .smTitle,
@@ -1782,6 +2001,55 @@ footer {
 
   .feed-title {
     font-size: 50px;
+  }
+
+  /* addcourse */
+  .college-title {
+
+    font-size: 26px;
+  }
+
+  .addcourseTop h1 {
+    font-size: 44px;
+  }
+
+  .drop-downs p {
+    font-size: 10px;
+  }
+
+  .text-wrapper {
+
+    padding: 0.2rem 1rem;
+
+  }
+
+  .drop-downs p {
+    font-size: 8px;
+  }
+
+  .drop-downs h4 {
+    font-size: 12px;
+  }
+
+  .addcourseTop h1 {
+    font-size: 39px;
+  }
+
+  .book-icon {
+
+    height: 130px;
+  }
+
+  .first-books {
+    padding: 0 1rem 1rem 2rem;
+  }
+
+  .cs-first-sem {
+    padding: 1rem;
+  }
+
+  .sem-title {
+    font-size: 22px;
   }
 }
 
